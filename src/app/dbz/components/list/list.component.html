@@ -9,7 +9,11 @@
   let isOdd = odd;
   let c = count"
 
-  class="list-group-item">
+  class="list-group-item"
+  [ngClass]="{
+    'list-group-item-primary': isFirst,
+    'list-group-item-dark': isLast
+  }">
 
     <span class="text-primary">{{ i + 1 }}. </span>
 
@@ -18,8 +22,6 @@
     <strong>Power: </strong>
 
     <span>{{ character.power }}</span>
-
-    <span> {{ c }}</span>
 
   </li>
 </ul>

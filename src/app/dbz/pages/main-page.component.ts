@@ -24,8 +24,12 @@ export class MainPageComponent {
   ]
 
   onNewCharacter (character: Character): void {
-    console.log('MainPage')
-    console.log(character)
+    this.characters.push(character)
+  }
+
+  onDeleteCharacter (index: number) {
+    const deletedCharacter = this.characters.splice(index, 1)
+    console.log(deletedCharacter)
   }
 
 }

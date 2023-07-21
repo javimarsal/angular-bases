@@ -6,7 +6,7 @@
 
     <dbz-list
     [characterList]="dbzService.characters"
-    (onDelete)="dbzService.onDeleteCharacter($event)"></dbz-list>
+    (onDelete)="dbzService.deleteCharacterById($event)"></dbz-list>
   </div>
 
   <div class="col">

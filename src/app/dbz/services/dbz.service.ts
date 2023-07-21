@@ -28,7 +28,7 @@ export class DbzService {
     }
   ]
 
-  onNewCharacter (character: Character): void {
+  addCharacter (character: Character): void {
     // Agrega el id y copia el resto de propiedades de character con el spread operator (...)
     // De esta manera no nos tenemos que preocupar de si las propiedades de character cambian
     const newCharacter: Character = {
